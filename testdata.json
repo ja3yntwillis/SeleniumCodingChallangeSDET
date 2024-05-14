@@ -1,0 +1,53 @@
+{
+  "TestCase_SuccessfulLoginAndLogout": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+  "TestCase_FailedLogin": {
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "error": "Epic sadface: Sorry, this user has been locked out."
+  },
+  "MultipleScenarioWorkflow": {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "filtervalue": "lohi",
+    "filterAssert": "Price (low to high)",
+    "Product1": "Sauce Labs Fleece Jacket",
+    "Product2": "Sauce Labs Onesie",
+    "CartQty": "2",
+    "AddCartText": "Add to cart",
+    "RemoveCartText": "Remove",
+    "FinishPageAssertText": "Thank you for your order!"
+  },
+  "ErrorUserScenarioWorkflow": {
+    "username": "error_user",
+    "password": "secret_sauce",
+    "Product1": "Sauce Labs Bike Light"
+  },
+  "BrowserRefreshWorkflow": {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "Product1": "Sauce Labs Bolt T-Shirt",
+    "AddCartText": "Add to cart",
+    "RemoveCartText": "Remove",
+    "Qty": ""
+  },
+  "PerformenceUserWorkflow": {
+    "username": "performance_glitch_user",
+    "password": "secret_sauce",
+    "Product1": "Sauce Labs Backpack"
+  },
+  "BonusWorkflow": {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "Facebook": "Facebook",
+    "LinkedIn": "LinkedIn",
+    "Twitter": "Twitter",
+    "facebookTitle": "Sauce Labs | San Francisco CA",
+    "twitterTitle": "Sauce Labs (@saucelabs) / X",
+    "linkedinTitle": "LinkedIn",
+    "SwagLabsTitle": "Swag Labs"
+
+  }
+}
