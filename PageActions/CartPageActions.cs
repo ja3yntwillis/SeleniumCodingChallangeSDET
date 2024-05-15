@@ -4,11 +4,11 @@ using SeleniumCodingChallangeSDET.Pages;
 
 namespace SeleniumCodingChallangeSDET.PageSteps
 {
-    public class CartPageSteps : WebPageActions
+    public class CartPageActions : WebPageActions
     {
         private CartPage cartPage;
 
-        public CartPageSteps(IWebDriver driver) : base(driver)
+        public CartPageActions(IWebDriver driver) : base(driver)
         {
             cartPage = new CartPage();
         }

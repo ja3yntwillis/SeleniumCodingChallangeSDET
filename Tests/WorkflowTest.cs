@@ -27,13 +27,13 @@ namespace SeleniumCodingChallangeSDET.Tests
         IWebDriver driver;
         Login LoginObject;
         BrowserActions BrowserActionsObj;
-        InventoryPageSteps InventoryPageSteps;
-        CartPageSteps CartPageSteps;
+        InventoryPageActions InventoryPageSteps;
+        CartPageActions CartPageSteps;
         CaptureScreenshot CaptureScreenshotObj;
-        CheckoutPageSteps CheckoutPageSteps;
+        CheckoutPageActions CheckoutPageSteps;
         CheckOut checkOut;
         string url;
-        FinishPageSteps FinishPageSteps;
+        FinishPageActions FinishPageSteps;
 
         public WorkflowTest(Reporting extent, IWebDriver driver):base()
         {
@@ -43,12 +43,12 @@ namespace SeleniumCodingChallangeSDET.Tests
             url = ConfigObject.findValueOfAConfiguration(config, "url");
             this.driver = driver;
             LoginObject = new Login(driver);
-            InventoryPageSteps = new InventoryPageSteps(driver);
+            InventoryPageSteps = new InventoryPageActions(driver);
             CaptureScreenshotObj = new CaptureScreenshot(driver);
             BrowserActionsObj = new BrowserActions(driver);
-            CartPageSteps = new CartPageSteps(driver);
-            CheckoutPageSteps = new CheckoutPageSteps(driver);
-            FinishPageSteps = new FinishPageSteps(driver);
+            CartPageSteps = new CartPageActions(driver);
+            CheckoutPageSteps = new CheckoutPageActions(driver);
+            FinishPageSteps = new FinishPageActions(driver);
             checkOut = new CheckOut(driver);
 
         }

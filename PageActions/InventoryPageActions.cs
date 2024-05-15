@@ -6,11 +6,11 @@ using SeleniumCodingChallangeSDET.Pages;
 
 namespace SeleniumCodingChallangeSDET.PageSteps
 {
-    public class InventoryPageSteps : WebPageActions
+    public class InventoryPageActions : WebPageActions
     {
         private InventoryPage inventoryPage;
 
-        public InventoryPageSteps(IWebDriver driver) : base(driver)
+        public InventoryPageActions(IWebDriver driver) : base(driver)
         {
             inventoryPage = new InventoryPage();
         }

@@ -4,11 +4,11 @@ using SeleniumCodingChallangeSDET.Pages;
 
 namespace SeleniumCodingChallangeSDET.PageSteps
 {
-    public class CheckoutPageSteps : WebPageActions
+    public class CheckoutPageActions : WebPageActions
     {
         private CheckoutPage checkoutPage;
 
-        public CheckoutPageSteps(IWebDriver driver) : base(driver)
+        public CheckoutPageActions(IWebDriver driver) : base(driver)
         {
             checkoutPage = new CheckoutPage();
         }

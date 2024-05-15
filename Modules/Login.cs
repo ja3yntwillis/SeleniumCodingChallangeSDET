@@ -8,11 +8,11 @@ namespace SeleniumCodingChallangeSDET.Modules
 {
     public class Login : WebPageActions
     {
-        private LoginPageSteps loginPageSteps;
+        private LoginPageActions loginPageSteps;
 
         public Login(IWebDriver driver) : base(driver)
         {
-            loginPageSteps = new LoginPageSteps(driver);
+            loginPageSteps = new LoginPageActions(driver);
         }
 
         public void LoggingIn(string username, string password)

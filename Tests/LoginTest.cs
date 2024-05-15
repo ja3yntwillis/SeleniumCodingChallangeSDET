@@ -18,7 +18,7 @@ namespace SeleniumCodingChallangeSDET.Tests
         private IWebDriver driver;
         private Login LoginObject;
         private BrowserActions BrowserActionsObj;
-        private InventoryPageSteps InventoryPageSteps;
+        private InventoryPageActions InventoryPageSteps;
         private CaptureScreenshot CaptureScreenshotObj;
         private string url;
 
@@ -31,7 +31,7 @@ namespace SeleniumCodingChallangeSDET.Tests
             url = ConfigObject.findValueOfAConfiguration(config, "url");
             this.driver = driver;
             LoginObject = new Login(driver);
-            InventoryPageSteps = new InventoryPageSteps(driver);
+            InventoryPageSteps = new InventoryPageActions(driver);
             CaptureScreenshotObj = new CaptureScreenshot(driver);
             BrowserActionsObj = new BrowserActions(driver);
         }

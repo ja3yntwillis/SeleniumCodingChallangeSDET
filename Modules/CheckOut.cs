@@ -6,11 +6,11 @@ namespace SeleniumCodingChallangeSDET.Modules
 {
     public class CheckOut : WebPageActions
     {
-        private CheckoutPageSteps checkoutPageSteps;
+        private CheckoutPageActions checkoutPageSteps;
 
         public CheckOut(IWebDriver driver) : base(driver)
         {
-            checkoutPageSteps = new CheckoutPageSteps(driver);
+            checkoutPageSteps = new CheckoutPageActions(driver);
         }
 
         public void FillCheckOutForm(string fn, string ln, string zip)

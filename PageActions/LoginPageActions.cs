@@ -4,11 +4,11 @@ using SeleniumCodingChallangeSDET.Pages;
 
 namespace SeleniumCodingChallangeSDET.PageSteps
 {
-    public class LoginPageSteps : WebPageActions
+    public class LoginPageActions : WebPageActions
     {
         private LoginPage loginPage;
 
-        public LoginPageSteps(IWebDriver driver) : base(driver)
+        public LoginPageActions(IWebDriver driver) : base(driver)
         {
             loginPage = new LoginPage();
         }
